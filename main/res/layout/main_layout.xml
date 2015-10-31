@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/tvSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Hello World"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnArduino"
+        android:layout_toRightOf="@+id/tvSteps"
+        android:layout_alignBaseline="@+id/tvSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:visibility="gone"></Button>
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-25dp"
+        android:layout_toRightOf="@+id/btnNet"
+        android:background="#ffc828" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-25dp"
+        android:layout_toRightOf="@+id/btnGPS"
+        android:background="#ffc828" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnNet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_wifi"
+        app:cb_color="#ffc828"
+        app:cb_pressedRingWidth="14dp" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnGPS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_action_locate"
+        app:cb_color="#ffc828"
+        app:cb_pressedRingWidth="14dp" />
+
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnBluetooth"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_action_bluetooth"
+        app:cb_color="#ffc828"
+        app:cb_pressedRingWidth="14dp" />
+
+    <ImageView
+        android:id="@+id/ivTank"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/level"
+        />
+
+</RelativeLayout>

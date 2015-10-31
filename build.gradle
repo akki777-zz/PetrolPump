@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.dbms.petrol"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.google.android.gms:play-services-maps:8.1.0'
+    compile 'com.github.markushi:circlebutton:1.1'
+}

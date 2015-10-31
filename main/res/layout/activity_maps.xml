@@ -1,0 +1,50 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context="com.dbms.petrol.NearestActivity">
+
+ <fragment
+     android:id="@+id/map"
+     android:name="com.google.android.gms.maps.SupportMapFragment"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" />
+
+ <Button
+     android:id="@+id/btnLoc"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Loc"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     android:layout_margin = "20dp"/>
+
+ <Button
+     android:id="@+id/btnGo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Go"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentRight="true"
+     android:layout_margin = "20dp"/>
+
+ <Button
+     android:id="@+id/btnData"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Data"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentLeft="true"
+     android:layout_margin = "20dp"/>
+
+ <Button
+     android:id="@+id/btnNearest"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Nearest"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom = "20dp"/>
+
+
+ </RelativeLayout>

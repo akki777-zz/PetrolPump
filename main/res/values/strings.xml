@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DBMS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Find Pump</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="speech_prompt">Start Navigation&#63;</string>
+    <string name="title_activity_database">DatabaseActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <color name="green">#99cc00</color>
+    <color name="orange"> #ffc828</color>
+    <string name="title_activity_stats">StatsActivity</string>
+</resources>
